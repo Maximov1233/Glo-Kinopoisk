@@ -1,0 +1,11 @@
+.movie {
+    // border: 1px solid green;
+    width: 1rem;
+    display: flex;
+    justify-content: space-between;
+    &-date {
+        width: 100%;
+        // border: 1px solid lightblue;
+        text-align: right;
+    }
+}
