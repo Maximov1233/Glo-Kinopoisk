@@ -1,5 +1,8 @@
-.movie {
-  width: 1rem;
+#movies h4 {
+  margin-bottom: 3rem;
+}
+
+#movies .movie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,12 +11,44 @@
           justify-content: space-between;
 }
 
-.movie img {
-  z-index: 2;
+#movies .movie img {
+  max-width: 100%;
 }
 
-.movie-date {
+#movies .movie img-poster {
+  height: 300px;
+}
+
+#movies .movie-date {
   width: 100%;
   text-align: right;
+}
+
+.spinner {
+  margin: 0 auto;
+  width: 10rem;
+  height: 10rem;
+  border: 1rem dashed;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-top-color: #aaa;
+  border-right-color: #555;
+  border-bottom-color: #000;
+  -webkit-animation: spin 500ms infinite linear;
+          animation: spin 500ms infinite linear;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
